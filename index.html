@@ -18,6 +18,12 @@
       --text:    #1a2420;
       --muted:   #6b7c76;
       --radius:  16px;
+
+      --font-main: 'Urbanist', sans-serif;
+  --fs-display: 56px;
+  --fs-header: 40px;
+  --fs-body: 18px;
+  --fs-label: 16px;
     }
 
     html { scroll-behavior: smooth; }
@@ -27,7 +33,85 @@
       /* background: var(--cream); */
       color: var(--text);
       overflow-x: hidden;
+       font-family: var(--font-main);
+  font-size: var(--fs-body);
+  color: var(--text);
+  overflow-x: hidden;
+  line-height: 1.6;
     }
+
+    /* Display — hero title */
+.hero-title {
+  font-family: 'Urbanist', sans-serif;
+  font-size: var(--fs-display);   /* 56px */
+  line-height: 1.1;
+  font-weight: 600;
+}
+
+/* Headers — section titles */
+.section-label,
+.consult-content h2,
+.includes-heading h2,
+.onestop-header h2,
+.expect-title,
+.treatment-header h2,
+.ba-card h2,
+.faq-left h2,
+.pricing-section h2,
+.request-text h2,
+.info-band h2 {
+  font-family: 'Urbanist', sans-serif;
+  font-size: var(--fs-header);    /* 40px */
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+/* Body text */
+.hero-desc,
+.section-sub,
+.consult-sub,
+.includes-desc,
+.onestop-header p,
+.onestop-card p,
+.expect-card p,
+.treatment-disclaimer,
+.faq-left p,
+.pricing-sub,
+.request-text p,
+.ba-disclaimer,
+.footer-brand p {
+  font-family: 'Urbanist', sans-serif;
+  font-size: var(--fs-body);      /* 18px */
+  line-height: 1.7;
+}
+
+/* Labels — eyebrows, tags, small caps */
+.hero-eyebrow,
+.band-eyebrow,
+.card-tag,
+.expect-step,
+.treatment-card-label,
+.pricing-card-label,
+.footer-col-label,
+.consult-list li,
+.inc-card p,
+.faq-a p,
+.form-disclaimer,
+.request-field label {
+  font-family: 'Urbanist', sans-serif;
+  font-size: var(--fs-label);     /* 16px */
+}
+
+/* Remove Cormorant Garamond — replace serif headings */
+.hero-title,
+.consult-content h2,
+.includes-heading h2,
+.expect-title,
+.ba-card h2,
+.request-text h2,
+.info-band h2 {
+  font-family: 'Urbanist', sans-serif !important;
+}
     
 
     /* ─── NAV ─── */
